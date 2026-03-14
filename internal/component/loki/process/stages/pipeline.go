@@ -21,6 +21,7 @@ type StageConfig struct {
 	DockerConfig                 *DockerConfig                 `alloy:"docker,block,optional"`
 	DropConfig                   *DropConfig                   `alloy:"drop,block,optional"`
 	EventLogMessageConfig        *EventLogMessageConfig        `alloy:"eventlogmessage,block,optional"`
+	FixConfig                    *FixConfig                    `alloy:"fix,block,optional"`
 	GeoIPConfig                  *GeoIPConfig                  `alloy:"geoip,block,optional"`
 	JSONConfig                   *JSONConfig                   `alloy:"json,block,optional"`
 	LabelAllowConfig             *LabelAllowConfig             `alloy:"label_keep,block,optional"`

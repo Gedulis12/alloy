@@ -103,6 +103,11 @@ func New(logger log.Logger, cfg StageConfig, registerer prometheus.Registerer, m
 		if err != nil {
 			return nil, err
 		}
+	case cfg.FixConfig != nil:
+		s, err = newFixStage(logger, *cfg.FixConfig)
+		if err != nil {
+			return nil, err
+		}
 	case cfg.TimestampConfig != nil:
 		s, err = newTimestampStage(logger, *cfg.TimestampConfig)
 		if err != nil {
